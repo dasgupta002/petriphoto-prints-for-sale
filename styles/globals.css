@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#eae6de] text-[#1b3b35] md:w-2/3 mx-auto p-12;
+    font-family: 'Pridi', serif;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+span {
+    @apply block text-[2.5rem] md:text-[6rem] font-bold;
+}
+
+div {
+    @apply w-full mb-2;
+}
+
+div > img {
+    @apply w-full;
+}
+
+a {
+    @apply bg-[#1b3b35] text-[#eae6de] hover:bg-transparent hover:text-[#1b3b35] border border-[#1b3b35] rounded-full p-2;
+}
